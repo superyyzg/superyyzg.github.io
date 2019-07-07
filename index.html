@@ -1,0 +1,551 @@
+<SCRIPT>
+    function isHidden(oDiv,pub_list = 0){
+      var vDiv = document.getElementById(oDiv);
+      vDiv.style.display = (vDiv.style.display == 'none')?'block':'none';
+      if (pub_list)
+      {
+        var full_pub_list_vDiv = document.getElementById('full_pub_list');
+		var selected_pub_list_vDiv = document.getElementById('recent_pub_list');
+				
+		if (full_pub_list_vDiv.style.display == 'block')
+		{
+		  selected_pub_list_vDiv.style.display = 'none';
+		} else
+		{
+		  selected_pub_list_vDiv.style.display = 'block';
+		}
+      }
+    }
+</SCRIPT>
+<table style="margin-left: 8%; margin-right: 8%; background: none repeat scroll 0% 0% rgb(255, 255, 255); font-style: normal; font-family: georgia, serif; font-size: 11pt;">
+<tbody>
+<tr>
+<td>
+	
+<strong><font size = "5">Yingzhen Yang</strong></font><br>
+<hr>
+
+
+<br><strong>About me</strong><br><br>
+I will be an assistant professor at Arizona State University (staring in Fall 2019). I am now a senior research scientist, and my research covers statistical machine learning, 
+	optimization, deep learning and theoretical computer science.
+
+<!--
+<br><br><strong><font color="#FF0000">Annoucements</font></strong><br><br>
+If you are interseted in working at Snap, please send the inquiries about internship or full-time positions to my university email address with your resume and a short description of 
+your research/engineering experience. Thanks!
+-->
+
+<br><br><strong>Research Interests</strong><br><br>
+
+<!--
+"Nothing is more practical than a good theory." --Vladimir Vapnik <br><br>
+
+
+I am mostly interested in theoretical computer science and different aspects of mathematics, especially functional analysis and geometry. From time to time I contribute to 
+statistical machine learning theory, including theory and application of deep learning, subspace learning, manifold learning, sparse representation and compressive sensing, 
+nonparametric models, probabilistic graphical models and generalization analysis of classification, semi-supervised learning and clustering; I also deveote efforts to 
+optimization theory for machine learning. 
+-->
+
+<!--
+My research focuses on machine learning and deep learning, and I am interested in the combination of conventional statistical machine learning and deep learning so as to design
+understandable architecure for deep learning. My research covers theory and application of deep learning including model compression and generalziation, subspace learning, 
+manifold learning, sparse representation and compressive sensing, nonparametric models, probabilistic graphical models and generalization analysis of classification, 
+semi-supervised learning and clustering; I also deveote efforts to optimization theory for important optimization problems involved in my research, especially for 
+sparse regression problems and the optimizatino of deep learning.
+<br><br>
+-->
+
+
+In my early years I also conducted research on computer vision and computer graphics. <font color="#800080" style="cursor:hand" onclick="isHidden('vision-graphics')" >Click to see the details </font>
+<!--
+<DIV id="vision-graphics" style="display:none">
+<br>
+My computer vision and graphics work include image classification (improved deep CNNs for ImageNet competition, CUDA C++ implementation), 
+image editing (image colorization, image super-resolution and image completion), large-scale online probabilistic topic models for images and documents 
+(MSR internship work, CUDA C++ implementation).
+</DIV>
+-->
+
+<!--
+<br><br>
+View more details in my CV and research statement: <br><br>
+
+<strong><a href="cv/YingzhenYang_CV.pdf">CV</a></strong><br>
+<strong><a href="cv/YingzhenYang_research_statement.pdf">Research Statement</a></strong><br>
+-->
+	
+<br>	
+<br><strong>Contact</strong><br><br>
+        
+	    
+            <S>2323 Beckman Institute, 405 N. Mathews Ave.<br>
+            Urbana, IL, 61801 <br> </S>
+            Email: superyyzg -AT- gmail.com
+
+       
+
+<hr>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<br><strong>Honors and Awards</strong><br><br>
+
+<!-- 2016 ICML Scholarship (Travel Award)<br> -->
+
+2016 ECCV Best Paper Finalist (among 11 out of all submissions) <br>
+
+<!-- 2012 AAAI Scholarship<br> -->
+
+2010 Carnegie Institute of Technology Dean's Tuition Fellowship<br>
+
+<!-- 2009 "Lu Zeng Yong" CAD&amp;CG High-Tech Award(for six researchers in China who have made 
+	distinguished achievements in Computer-Aided Design&amp;Computer Graphics) <br> -->
+
+<!--
+2007 First Prize Graduate Student Scholarship Honor in Zhejiang University(&lt;3%)<br><br>
+
+2007 Zhejiang University JiangZhen Scholarship (&lt;3%, Twice)<br><br>
+
+2006 Excellent dissertation for B.S degree in Zhejiang University(&lt;3%)<br><br>
+
+2005 Zhejiang Province Calculus Competition (<b>first prize twice, ranked 1st over about 2,500 competitors in 2004</b>)<br><br>
+-->
+
+Before 2005: Bronze medal in National Senior High School Mathematics Competition, First Prize of National Junior High School Mathematics Competition<br>
+
+<hr>
+
+<br><strong>Professional Services & Activities</strong><br><br>
+Program Committee Member: International Joint Conferences on Artificial Intelligence (IJCAI) 2015, IJCAI 2017, IJCAI 2018, 
+IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2018<br>
+
+Reviewer: Journal of Machine Learning Research (JMLR), IEEE Transactions on Image Processing (TIP), Pattern Recognition (PR), 
+Knowledge and Information Systems (KAIS), Machine Vision and Applications (Springer Journal)<br>
+
+<!--Reviewer and Organizer: ACM Multimedia Workshop on Surreal Media and Virtual Cloning, in conjunction with ACM Multimedia 2010<br> -->
+
+<hr>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<br><strong>Industrial Experience</strong><br><br>
+Over ten years of experience in C/C++ programming and software design.<br><br>
+Research Intern, Microsoft Research at Redmond, WA. May 2015 to Aug. 2015. online probabilistic topic models for large-scale application with CUDA C/C++ programming. <br>
+Research Intern, Microsoft Research at Redmond, WA. May 2014 to Aug. 2014. Developed parallelized and accelerated probabilistic topic models with CUDA C/C++ programming. <br>
+Research Intern, Hewlett-Packard Labs, Palo Alto, California. May 2011 to Aug. 2011. Efficient markerless augmented reality with C/C++ programming. <br>
+<hr>
+
+<br><strong>Projects</strong><br><br>
+Please refer to the details of my projects <a href="projects/index.html" rel="nofollow">here</a>.
+<hr>
+
+<DIV id="recent_pub_list">
+<br><strong>Recent Publications </strong>
+<font color="#800080" style="cursor:hand" onclick="isHidden('full_pub_list',1)" >(Full List)</font>
+<br>
+	
+<br>
+<strong>Yingzhen Yang</strong>, Jiahui Yu.<br>
+<font color="#800080">Fast Proximal Gradient Descent for A Class of Non-convex and Non-smooth Sparse Learning Problems.</font><br>
+Proc. of Conference on Uncertainty in Artificial Intelligence (UAI) 2019.
+<!--[<a href="papers/fast-pgd-supp.pdf">Supplementary</a>]-->
+<br>
+
+<br>
+<strong>Yingzhen Yang.</strong><br>
+<font color="#800080"> Dimensionality Reduced L0-Sparse Subspace Clustering.</font><br>
+Proc. of International Conference on Artificial Intelligence and Statistics (AISTATS) 2018. 
+[<a href="papers/l0ssc-rp.pdf">Paper</a>][<a href="papers/l0ssc-rp-supp.pdf">Supplementary</a>]
+<br>
+
+<br>
+Xiaojie Jin, <strong>Yingzhen Yang</strong>, Ning Xu, Jianchao Yang, Nebojsa Jojic, Jiashi Feng, Shuicheng Yan.<br>
+<font color="#800080"> WSNet: Compact and Efficient Networks Through Weight Sampling.</font><br>
+Proc. of International Conference on Machine Learning (ICML) 2018.
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Jiashi Feng, Nebojsa Jojic, Jianchao Yang, Thomas S. Huang. <br> 
+<font color="#800080">Subspace Learning by L0-Induced Sparsity. </font><br>
+International Journal of Computer Vision (IJCV) 2018, special issue on the best of European Conference on Computer Vision (ECCV) 2016.
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Jiashi Feng, Jiahui Yu, Jianchao Yang, Pushmeet Kohli, Thomas S. Huang.<br>
+<font color="#800080">Neighborhood Regularized L1-Graph.</font><br>
+Proc. of Conference on Uncertainty in Artificial Intelligence (UAI) 2017.
+[<a href="papers/nrl1graph-rp.pdf">Paper</a>]
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Jiahui Yu, Pushmeet Kohli, Jianchao Yang, Thomas S. Huang.<br>
+<font color="#800080">Support Regularized Sparse Coding and Its Fast Encoder.</font><br>
+Proc. of International Conference on Learning Representations (ICLR) 2017.
+[<a href="papers/support_regularized_sparse_coding.pdf">Paper</a>]
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Jiashi Feng, Nebojsa Jojic, Jianchao Yang, Thomas S. Huang.<br>
+<font color="#800080">L0-Sparse Subspace Clustering.</font><br>
+Proc. of European Conference on Computer Vision (ECCV) 2016. (<b>Oral Presentation, Among 11 Best Paper Candidates</b>)
+[<a href="papers/l0-ssc.pdf">Paper</a>]
+[<a href="papers/l0-ssc-supp.pdf">Supplementary</a>]
+[<a href="papers/l0-ssc-slides.pdf">Slides</a>]
+[<a href="https://github.com/yingzhenyang/L0-SSC">Code (Both CUDA C++ for extreme efficiency and MATLAB)</a>]
+<br>
+<font color="#800080">Our work establishs almost surely equivalence between L0 sparsity and subspace detection property, 
+	under the 	mild condition of i.i.d. data generation and nondegenerate distribution. This is much milder than previous 
+	conditions required by L1 sparse subspace clustering literature.
+</font>
+<font color="#800080" style="cursor:hand" onclick="isHidden('eccv-talk')" >Click to see the key points in the talk</font>
+<DIV id="eccv-talk" style="display:none">
+<br>
+<font color="#800080">
+The key points in the talk are: 
+<ol>
+<li>Goal of subspace clustering <br></li>
+<li>Block-diagonal similarity matrix (where similarity between data from different subspaces vanishes) due to the Subspace Detection Property (SDP). Partitioning data according to their subspace structure is performed by clustering the data with the similarity matrix (spectral clustering in this work).<br></li>
+<li>Existing SSC method achieves SDP under various assumptions on the subspaces and data, such as ingradius and subspace incoherence. L0-SSC achieves SDP almost surely under much milder assumptions (Thm .1)  <br></li>
+<li>No free lunch and no better deal: suppose there is a linear representation of data that satisfies SDP, then the optimal solution to L0 sparse representation problem can be obtained almost surely from it in polynomial time. (Thm. 2) <br></li>
+<li>Therefore, almost surely equivalence between L0-sparsity and SDP is established for the first time. <br></li>
+<li>Using proximal gradient descent (PGD) for the optimization problem of L0-SSC, with guarantee of convergence (Prop. 1). Moreover, the obtained sub-optimal solution
+ is close to the globally optimal solution (Thm. 3). <br></li>
+<li>Property of support shrinkage during the iterations of PGD (Prop. 2). This property is used to significantly reduce the computational burden of the optimization.</li>
+</ol>
+</font>
+</DIV>
+<br>
+
+<!--
+<br>
+<strong>Yingzhen Yang</strong>, Feng Liang, Shuicheng Yan, Zhangyang Wang, Thomas S. Huang. <br>
+<font color="#800080">On a Theory of Nonparametric Pairwise Similarity for Clustering: Connecting Clustering to Classification. </font><br>
+Proc. of Advances in Neural Information Processing Systems (NIPS) 2014.
+[<a href="papers/nonparametric_similarity_nips2014.pdf">Paper</a>]
+[<a href="http://papers.nips.cc/paper/5304-on-a-theory-of-nonparametric-pairwise-similarity-for-clustering-connecting-clustering-to-classification/bibtex">BIBTEX</a>]
+[<a href="papers/nonparametric_similarity_supple_nips2014.pdf">Supplementary</a>]
+[<a href="papers/nonparametric_similarity_poster_nips2014.pdf">Poster</a>]
+<br>
+-->
+
+<br>
+<strong>Yingzhen Yang</strong>, Zhangyang Wang, Zhaowen Wang, Shiyu Chang, Ding. Liu, Honghui Shi, Thomas S. Huang.<br>
+<font color="#800080">Epitomic Image Super-Resolution. </font><br>
+Proc. of AAAI Conference on Artificial Intelligence (AAAI) 2016 (<strong>Best Poster/Best Presentation Finalist for Student Poster Program</strong>).
+[<a href="projects/epitome/sr/epitome_sr.html">Project&Code</a>]
+<br>
+
+<!--
+<br>
+Shiyu Chang, Guo-Jun Qi, <strong>Yingzhen Yang</strong>, Charu C. Aggarwal, Jiayu Zhou, Meng Wang, Thomas S. Huang.
+<br>
+<font color="#800080">Large-Scale Supervised Similarity Learning in Networks. 
+</font>
+<br>
+Knowledge and Information Systems, 2015. (<strong>the conference version of this paper received ICDM 2014 Best
+Student Paper Award</strong>)
+[<a href="papers/large_scale_supervised_similarity_learning_in_networks_kif2015.pdf" rel="nofollow">Paper</a>]
+<br>
+-->
+
+</DIV>
+
+<DIV id="full_pub_list" style="display:none">
+<br><strong>Full Publication List </strong>
+<font color="#800080" style="cursor:hand" onclick="isHidden('full_pub_list',1)" >(Recent Publications)</font>
+<br>
+
+<br><strong>Journal Papers:</strong><br>
+
+<!--
+<br>
+<strong>Yingzhen Yang</strong>, Jianchao Yang, Thomas S. Huang. <br>
+<font color="#800080" face="georgia, serif" >Feature Epitome and Its Applications. </font><br>
+In preparation for IEEE Transactions on Image Processing. <br>
+-->
+
+<br>
+<strong>Yingzhen Yang</strong>, Jiashi Feng, Nebojsa Jojic, Jianchao Yang, Thomas S. Huang. <br> 
+<font color="#800080">Subspace Learning by L0-Induced Sparsity. </font><br>
+International Journal of Computer Vision (IJCV) 2018, special issue on the best of European Conference on Computer Vision (ECCV) 2016.
+<br>
+
+<br>
+Zhangyang Wang, <strong>Yingzhen Yang</strong>, Zhaowen Wang, Shiyu Chang, Jianchao Yang, Thomas S. Huang.<br>
+<font color="#800080" face="georgia, serif" >Learning Super-Resolution Jointly from External and Internal Examples. </font><br>
+IEEE Transactions on Image Processing, 2015. 
+[<a href="papers/learning_super_resolution_jointly_from_external_and_internal_examples_tip2015.pdf" rel="nofollow">Paper</a>]
+<br>
+
+<br>
+Shiyu Chang, Guo-Jun Qi, <strong>Yingzhen Yang</strong>, Charu C. Aggarwal, Jiayu Zhou, Meng Wang, Thomas S. Huang.
+<br>
+<font color="#800080">Large-Scale Supervised Similarity Learning in Networks.</font><br>
+Knowledge and Information Systems, 2015. (<strong>the conference version of this paper received ICDM 2014 Best
+Student Paper Award</strong>)
+[<a href="papers/large_scale_supervised_similarity_learning_in_networks_kif2015.pdf" rel="nofollow">Paper</a>]
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Yichen Wei, Chunxiao Liu, Qunsheng Peng, Yasuyuki Matsushita. <br>
+<font color="#800080">An Improved Belief Propagation Method for Dynamic Collage. </font><br>
+The Visual Computer, 25(5-7):431-439, 2009.
+[<a href="papers/belief_propagation_dynamic_collage_tvc09.pdf" rel="nofollow">Paper</a>]
+[<a href="http://dl.acm.org/downformats.cfm?id=1536199&amp;parent_id=1536170&amp;expformat=bibtex&amp;CFID=103809773&amp;CFTOKEN=74349165" rel="nofollow">BIBTEX</a>]
+[<a href="papers/belief_propagation_dynamic_collage_slides_cgi09.pdf" rel="nofollow">Slides</a>]
+[<a href="projects/collage/butterfly-short.avi" rel="nofollow">Demo of Browsing Butterflies</a>]
+[<a href="projects/collage/flower-short.avi" rel="nofollow">Demo of Browsing Flowers</a>]
+[<a href="projects/collage/collage.html" rel="nofollow">Project Page</a>]
+<br>
+
+<br>
+Chunxiao Liu, <strong>Yingzhen Yang</strong>, Qunsheng Peng, Jin Wang, Wei Chen. <br>
+<font color="#800080">Distortion Optimization based Image Completion from a Large Displacement View. </font><br>
+Computer Graphics Forum, 27(7): 1755-1764, 2008.
+[<a href="papers/distortion_optimization_image_completion_cgf2008.pdf" rel="nofollow">Paper</a>]
+[<a href="http://dblp.uni-trier.de/rec/bibtex/journals/cgf/LiuYPWC08" rel="nofollow">BIBTEX</a>]
+[<a href="papers/distortion_optimization_image_completion_cgf2008_1320_sm_figures.pdf" rel="nofollow">Supporting Figures</a>]
+[<a href="projects/image_completion_ldv/ldv_completion.html" rel="nofollow">Project Page</a>]
+<br>
+
+<br>
+Chengfang Song, Yang Yu, <strong>Yingzhen Yang</strong>, Fazhi He, Qingzhu, Qunsheng Peng. <br>
+<font color="#800080" face="georgia, serif" >Data-Driven Realistic Animation of Large-Scale Forest. </font><br>
+Journal of Computer-Aided Design&amp;Computer Graphics, Vol 20, No.8, 2008.
+<!--[<a href="projects/forest_animation/forest_animation.html" rel="nofollow">Project Page</a>]-->
+<br>
+
+<br><strong>Conference/Workshop Papers:</strong><br>
+
+<!--
+<br>
+<strong>Yingzhen Yang</strong>, Jiashi Feng, Jianchao Yang, Thomas S. Huang.<br>
+<font color="#800080">Learning with L0-Graph: L0-Induced Sparse Subspace Clustering.</font><br>
+eprint arXiv:1510.08520.
+[<a href="papers/l0graph.pdf">Paper</a>]
+<br>
+-->
+	
+<br>
+<strong>Yingzhen Yang</strong>, Jiahui Yu.<br>
+<font color="#800080">Fast Proximal Gradient Descent for Non-convex Optimization.</font><br>
+Proc. of Conference on Uncertainty in Artificial Intelligence (UAI) 2019.
+<br>
+
+<br>
+<strong>Yingzhen Yang.</strong><br>
+<font color="#800080"> Dimensionality Reduced L0-Sparse Subspace Clustering.</font><br>
+Proc. of International Conference on Artificial Intelligence and Statistics (AISTATS) 2018. 
+[<a href="papers/l0ssc-rp.pdf">Paper</a>][<a href="papers/l0ssc-rp-supp.pdf">Supplementary</a>]
+<br>
+	
+<br>
+Xiaojie Jin, <strong>Yingzhen Yang</strong>, Ning Xu, Jianchao Yang, Nebojsa Jojic, Jiashi Feng, Shuicheng Yan.<br>
+<font color="#800080"> WSNet: Compact and Efficient Networks Through Weight Sampling.</font><br>
+Proc. of International Conference on Machine Learning (ICML) 2018.
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Jiashi Feng, Jiahui Yu, Jianchao Yang, Pushmeet Kohli, Thomas S. Huang.<br>
+<font color="#800080">Neighborhood Regularized L1-Graph.</font><br>
+Proc. of Conference on Uncertainty in Artificial Intelligence (UAI) 2017.
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Jiahui Yu, Pushmeet Kohli, Jianchao Yang, Thomas S. Huang.<br>
+<font color="#800080">Support Regularized Sparse Coding and Its Fast Encoder.</font><br>
+Proc. of International Conference on Learning Representations (ICLR) 2017.
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Jiashi Feng, Nebojsa Jojic, Jianchao Yang, Thomas S. Huang.<br>
+<font color="#800080">L0-Sparse Subspace Clustering.</font><br>
+Proc. of European Conference on Computer Vision (ECCV) 2016. (<b>Oral Presentation, Among 11 Best Paper Candidates</b>)
+[<a href="papers/l0-ssc.pdf">Paper</a>]
+[<a href="papers/l0-ssc-supp.pdf">Supplementary</a>]
+[<a href="papers/l0-ssc-slides.pdf">Slides</a>]
+[<a href="https://github.com/yingzhenyang/L0-SSC">Code (Both CUDA C++ for extreme efficiency and MATLAB)</a>]
+<br>
+<font color="#800080">Our work establishs almost surely equivalence between L0 sparsity and subspace detection property, 
+	under the 	mild condition of i.i.d. data generation and nondegenerate distribution. This is much milder than previous 
+	conditions required by L1 sparse subspace clustering literature.
+</font>
+<font color="#800080" style="cursor:hand" onclick="isHidden('eccv-talk')" >Click to see the key points in the talk</font>
+<DIV id="eccv-talk" style="display:none">
+<br>
+<font color="#800080">
+The key points in the talk are: 
+<ol>
+<li>Goal of subspace clustering <br></li>
+<li>Block-diagonal similarity matrix (where similarity between data from different subspaces vanishes) due to the Subspace Detection Property (SDP). Partitioning data according to their subspace structure is performed by clustering the data with the similarity matrix (spectral clustering in this work).<br></li>
+<li>Existing SSC method achieves SDP under various assumptions on the subspaces and data, such as ingradius and subspace incoherence. L0-SSC achieves SDP almost surely under much milder assumptions (Thm .1)  <br></li>
+<li>No free lunch and no better deal: suppose there is a linear representation of data that satisfies SDP, then the optimal solution to L0 sparse representation problem can be obtained almost surely from it in polynomial time. (Thm. 2) <br></li>
+<li>Therefore, almost surely equivalence between L0-sparsity and SDP is established for the first time. <br></li>
+<li>Using proximal gradient descent (PGD) for the optimization problem of L0-SSC, with guarantee of convergence (Prop. 1). Moreover, the obtained sub-optimal solution
+ is close to the globally optimal solution (Thm. 3). <br></li>
+<li>Property of support shrinkage during the iterations of PGD (Prop. 2). This property is used to significantly reduce the computational burden of the optimization.</li>
+</ol>
+</DIV>
+</font>
+<br>
+
+
+<br>
+<strong>Yingzhen Yang</strong>, Jianchao Yang, Wei Han, Thomas S. Huang.<br>
+<font color="#800080">On the Sub-Optimality of Proximal Gradient Descent for L0 sparse approximation.</font><br>
+ICML 2016 workshop on Advances in Non-Convex Analysis and Optimization.
+[<a href="papers/nonvex_sparse_icml06nonvex.pdf">Paper</a>]
+<br>
+
+<br>
+Zhiding Yu, Weiyang Liu, Wenbo Liu, <strong>Yingzhen Yang</strong>, Ming Li and Vijayakumar Bhagavatula.<br>
+<font color="#800080">On Order-Constrained Transitive Distance Clustering. </font><br>
+Proc. of AAAI Conference on Artificial Intelligence (AAAI) 2016.
+<br>
+
+<br>
+Zhangyang Wang, <strong>Yingzhen Yang</strong>, Shiyu Chang, Jinyan Li, Simon Fong, Thomas S. Huang.<br>
+<font color="#800080">A Joint Optimization Framework of Sparse Coding and Discriminative Clustering. </font><br>
+Proc. of International Joint Conferences on Artificial Intelligence (IJCAI) 2015.
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Zhangyang Wang, Zhaowen Wang, Shiyu Chang, Ding. Liu, Honghui Shi, Thomas S. Huang.<br>
+<font color="#800080">Epitomic Image Super-Resolution. </font><br>
+Proc. of AAAI Conference on Artificial Intelligence (AAAI) 2016 (<strong>Best Poster/Best Presentation Finalist for Student Poster Program</strong>).
+[<a href="projects/epitome/sr/epitome_sr.html">Project&Code</a>]
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Xinqi Chu, Zhangyang Wang, Thomas S. Huang. <br>
+<font color="#800080">Nonparametric Maximum Margin Similarity for Semi-Supervised Learning. </font><br>
+Advances in Neural Information Processing Systems (NIPS) 2014 workshop on Modern Nonparametrics: Automating the Learning Pipeline, spotlight talk.
+[<a href="papers/nonparametric_margin_similarity_nips2014w.pdf">Paper</a>]
+[<a href="papers/nonparametric_margin_similarity_slides_nips2014w.pdf">Slides</a>]
+[<a href="papers/nonparametric_margin_similarity_poster_nips2014w.pdf">Poster</a>]
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Feng Liang, Shuicheng Yan, Zhangyang Wang, Thomas S. Huang. <br>
+<font color="#800080">On a Theory of Nonparametric Pairwise Similarity for Clustering: Connecting Clustering to Classification. </font><br>
+Proc. of Advances in Neural Information Processing Systems (NIPS) 2014.
+[<a href="papers/nonparametric_similarity_nips2014.pdf">Paper</a>]
+[<a href="http://papers.nips.cc/paper/5304-on-a-theory-of-nonparametric-pairwise-similarity-for-clustering-connecting-clustering-to-classification/bibtex">BIBTEX</a>]
+[<a href="papers/nonparametric_similarity_supple_nips2014.pdf">Supplementary</a>]
+[<a href="papers/nonparametric_similarity_poster_nips2014.pdf">Poster</a>]
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Zhangyang Wang, Jianchao Yang, Jiawei Han, Thomas S. Huang. <br>
+<font color="#800080">Regularized L1-Graph for Data Clustering. </font><br>
+Proc. of British Machine Vision Conference (BMVC) 2014.
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Zhangyang Wang, Jianchao Yang, Thomas S. Huang.<br>
+<font color="#800080">Data Clustering by Laplacian Regularized L1-Graph. </font><br>
+Proc. of AAAI Conference on Artificial Intelligence (AAAI) 2014.
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Xinqi Chu, Thomas S. Huang. <br>
+<font color="#800080">Nonparametric Pairwise Similarity for Discriminative Clustering. </font><br>
+Advances in Neural Information Processing Systems (NIPS) 2013 workshop on Modern Nonparametric Methods in
+Machine Learning, spotlight talk.
+[<a href="https://sites.google.com/site/nips2013modernnonparametric/contributed-talks">Link</a>]
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Xinqi Chu, Tian-Tsong Ng, Alex Yong-Sang Chia, Jianchao Yang, Hailin Jin, Thomas S. Huang. <br>
+<font color="#800080">Epitomic Image Colorization. </font><br>
+Proc. of IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2014. (<b>Oral Presentation</b>)
+[<a href="papers/epitomic_image_colorization_icassp2014.pdf">Paper</a>]
+[<a href="papers/epitomic_image_colorization_icassp2014.bib">BIBTEX</a>]
+[<a href="papers/epitomic_image_colorization_slides_icassp2014.pdf">Slides</a>]
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Feng Liang, Thomas S. Huang. <br>
+<font color="#800080">Discriminative Exemplar Clustering. </font><br>
+Proc. of IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2014.
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Xinqi Chu, Feng Liang, Thomas S. Huang. <br>
+<font color="#800080">Pairwise Exemplar Clustering. </font><br>
+Proc. of AAAI Conference on Artificial Intelligence (AAAI) 2012. 
+[<a href="papers/pairwise_exemplar_clustering_aaai12.pdf">Paper</a>]
+<!--[<a href="../projects/pairwise%20exemplar%20clustering/clustering.html" rel="nofollow">Project Page</a>]-->
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Yang Cai. <br>
+<font color="#800080">Virtual Gazing in Video Surveillance. </font><br>
+ACM Multimedia Workshop on Surreal Media and Virtual Cloning, in conjunction with ACM Multimedia 2010.
+[<a href="papers/virtual_gazing_surveillance_acmmmw2010.pdf">Paper</a>]
+<!--[<a href="../projects/virtual_gazing/virtual_gazing.html">Project Page</a>]-->
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Yin Zhu, Qunsheng Peng. <br>
+<font color="#800080">Image Completion Using Structural Priority Belief Propagation. </font><br>
+Proc. of ACM International Conference on Multimedia 2009.
+<!--[<a href="http://portal.acm.org/citation.cfm?id=1631396" rel="nofollow">Link</a>]-->
+<br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Yin Zhu, Qunsheng Peng. <br>
+<font color="#800080">Entertaining Video Warping. </font><br>
+Proc. of the IEEE international conference on CAD/Graphics (HCI Session) 2009.
+[<a href="papers/entertaining_video_warping_cadgraphics09.pdf">Paper</a>]
+<!--[<a href="../projects/realtime_face_warping/demo.avi" rel="nofollow">Demo</a>]-->
+<br>
+
+<br>
+Chunxiao Liu, <strong>Yingzhen Yang</strong>, Qunsheng Peng, Yanwen Guo. <br>
+<font color="#800080">A New Distortion Minimization Approach for Image Completion based on a Large Displacement View. </font><br>
+Proc. of Computer Graphics International (Texture Session) 2008.
+<br>
+
+<br><strong>Technical Reports:</strong><br>
+
+<br>
+Dan Gelb, <strong>Yingzhen Yang</strong>, Mitch Trott. <br>
+<font color="#800080">Efficient Markerless Augmented Reality. </font><br>
+Submitted to HP Tech Con. 2012.
+<br>
+
+<br>
+Yichen Wei, Yasuyuki Matsushita and <strong>Yingzhen Yang</strong>. <br>
+<font color="#800080">Efficient Optimization of Photo Collage. </font><br>
+Technical Report, Microsoft Research, MSR-TR-2009-59, May, 2009.
+[<a href="http://research.microsoft.com/apps/pubs/default.aspx?id=80783">Link</a>]
+[<a href="papers/efficient_photo_collage_MSR-TR-2009-59.pdf">Paper</a>]
+[<a href="http://research.microsoft.com/en-us/um/people/yichenw/collage/" rel="nofollow">Project Page with Demos</a>]
+<br>
+
+<br><strong>Others:</strong><br>
+
+<br>
+<strong>Yingzhen Yang</strong>, Yang Cai. <br>
+<font color="#800080">Virtual Gazing in Video Surveillance.</font><br>
+ACM Multimedia Workshop on Surreal Media and Virtual Cloning, in conjunction with ACM Multimedia 2010.
+<br>
+
+</DIV>
+<br><br>
+<!--
+<a href="http://www.clustrmaps.com/map/ifp.illinois.edu" title="Visitor Map for ifp.illinois.edu">
+<img src="//www.clustrmaps.com/map_v2.png?u=dNdb&d=7xLa4bnp8ewiJt346rlxV19q_xnudJb0AKHq1cCB6FI" alt="Locations of visitors to this page" height="42" width="42"/>
+</a>
+-->
+<a href="https://clustrmaps.com/site/18pcf" title="Visit tracker">
+<img src="//www.clustrmaps.com/map_v2.png?d=DUTbQybFL74MXmAmlqlVGJmK_Sv524Bak4tWaO1v6PY&cl=ffffff" height="42" width="42">
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+

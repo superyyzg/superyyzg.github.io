@@ -1,0 +1,79 @@
+<div style="background-color: white; margin: 25px 10%; font-family: arial; font-size: 12pt;">
+<center>
+<h1>Photo Browsing via Dynamic Collage</h1>
+<br>
+</center>
+<h2>Abstract</h2>
+<p align="justify">This paper presents a new photo browsing technique, dynamic collage. Although previous photo collage techniques have innate advantages for viewing several photos collectively, they only focus on a static two-dimensional arrangement of photos so that the scalability is limited. In dynamic collage, new photos are incrementally inserted into the collage one by one while the old photos are removed accordingly, the positions of photos in the canvas are updated with a local and incremental manner to form a new layout so as to maximize visibility of all the important information embedded in the current collage meanwhile maintaining the visual continuity of two successive collages. To achieve this goal, a carefully designed optimization method based on belief propagation is employed. Unlike most traditional applications of belief propagation on pairwise MRF, we apply belief propagation on factor graph to optimize terms which cannot be represented by pairwise restricted belief propagation. We propose a novel approximate method to reduce the computation complexity, and this approximate method suggests a direction for using belief propagation on factor graph to optimize high order potential functions similar to ours. </p>
+<table>
+<tbody>
+<tr>
+<td align="middle"><img src="collage_factor_graph.jpg?width=50%25" width="35%"></td>
+</tr>
+<tr>
+<td>
+<p align="justify">The above figure illustrates the factor graph model used in this project. The state of each photo is represented as a variable node and each potential function is represented as a factor node in the factor graph model. Each factor node is linked to a set of variable nodes which represent the variables of the potential function that factor node represents. The potential functions indicates the information loss and blank area of the canvas. The movable ranges of all photos form the solution space of the central coordinates optimization problem.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h2>Publication</h2>
+<p>Yingzhen Yang, Yichen Wei, Chunxiao Liu, Qunsheng Peng, Yasuyuki Matsushita.<br>
+An Improved Belief Propagation Method for Dynamic Collage<br>
+The Visual Computer, 25(5-7):431-439, 2009.</p>
+<p>The&nbsp;more advanced work: <br>
+Yichen Wei, Yasuyuki Matsushita and Yingzhen Yang. <br>
+Efficient Optimization of Photo Collage <br>
+Technical Report, Microsoft Research, MSR-TR-2009-59, May, 2009. [<a href="http://research.microsoft.com/en-us/um/people/yichenw/collage/" rel="nofollow">Project Page</a>] </p>
+<h2>Results</h2>
+<table>
+<tbody>
+<tr>
+<td align="middle"><img src="collage_comparison.jpg?width=60%25" width="60%"></td>
+</tr>
+<tr>
+<td align="middle">
+<p align="justify">The comparison between the results of applying BP on the factor graph (right) and on the pairwise MRF (left). Apparently BP on factor graph is superior to the latter for the high utilization rate of the canvas space with almost no blank area.</p>
+</td>
+</tr>
+<tr>
+<td><br><br>
+</td>
+</tr>
+<tr>
+<td align="middle">
+<h3>Demo of browsing butterflies [<a href="butterfly-short.avi" rel="nofollow">short (1.7M)</a>] [<a href="butterfly-long.avi" rel="nofollow">long (7.8M)</a>]</h3>
+</td>
+</tr>
+<tr>
+<td align="middle"><img src="collage_butterfly.jpg?width=60%25" width="60%"></td>
+</tr>
+<tr>
+<td align="middle">
+<p align="justify">Using our dynamic collage system to browse a photo collection "butterfly". 
+Photo marked with a white cycle is the newly added one, and photo marked with a red cycle will be removed in the next collage.
+After each photo insertion or removal, the photos on the canvas are adjusted in a local and incremental manner to form a new photo collage in real time 
+with an efficient optimization method based on belief propagation on factor graph. </p>
+</td>
+</tr>
+<tr>
+<td><br>
+</td>
+</tr>
+<tr>
+<td align="middle">
+<h3>Demo of browsing flowers [<a href="flower-short.avi" rel="nofollow">short (2.6M)</a>] [<a href="flower-long.avi" rel="nofollow">long (17M)</a>]</h3>
+</td>
+</tr>
+<tr>
+<td align="middle"><img src="collage_flower.jpg?width=60%25" width="60%"></td>
+</tr>
+<tr>
+<td align="middle">
+<p>Using our photo browsing system to browse a photo collection "flower".</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>

@@ -1,0 +1,114 @@
+<div style="background-color: white; margin: 25px 10%; font-family: arial; font-size: 12pt;">
+<center>
+<h1>Pairwise Exemplar Clustering</h1>
+</center>
+
+<br>
+<h2>Abstract</h2>
+<p align="justify">
+We present a new exemplar-based clustering algorithm, Pairwise Exemplar Clustering (PEC), that improves the performance
+of existing exemplar-based clustering method such as Affinity Propagation [Frey07]. PEC models arbitrary underlying distribution of the data by non-parametric kernel density estimation.
+We propose a new measure for separating different classes by minimizing the misclassification rate of the nearest neighbor classifier. The broadly used kernel form of cut turns out to be a special
+case of our new measure. We build the objective function based on this new measure and optimize it by maximizing a posterior in a Pariwise Markov Random Field. We also design
+an efficient algorithm for message computation to reduce the time complexity from O(N^2) to O(N). Experiments on synthetic and real datasets demonstrate the effectiveness of our method. 
+</p>
+<br>
+
+
+<table align="center">
+<tbody>
+<tr>
+<td align="middle"><img src="../images/pec(large).jpg?width=60%25" width="50%"></td>
+</tr>
+<tr>
+<td align="middle">
+<p>Separating classes by minimizing misclassification rate. The circles around points illustrate the nearest neighbor delta-cover.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+<h2>Results on Synthetic Dataset</h2>
+<table>
+<tbody>
+<tr>
+<td align="middle"><img src="ap_toy.jpg?width=60%25" width="39%"><img src="pec_toy.jpg?width=60%25" width="39%"></td>
+</tr>
+<tr>
+<td align="middle">
+<p>Clustering result on 300 pioints whose distribution is a mixture of 5 gaussians with different scales. Each data point is linked to its cluster exemplar (the representative of the cluster). Left: result by Affinity Propagation [Frey07]. Right: result by our method.</p>
+</td>
+</tr>
+<tr>
+<td>
+<br>
+<br>
+</td>
+<tr>
+<td align="middle"><img src="gaussians_cluster.jpg?width=60%25" width="39%"></td>
+</tr>
+</tr>
+<tr>
+<td align="middle">
+<p>Repeat the simulation 10 times, and we compare PEC to K-means, Spectral Clustering [Ng01], Gaussian Mixture Model (GMM), and Affinity Propagation (AP). Avg. ARI is the average ARI (Ajusted Rand Index),
+SD stands for standard deviation of the ARI, and AC is the average number of clusters by model selection.</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<br>
+<h2>Results on UCI Datasets</h2>
+<p>SC stands for Spectral Clustering, and nearest neighbor delta-cover is our new separability measure for different classes, and it is compared to the traditional kernel similarities which corresponds to the degraded delta-cover in our formulation (a degraded special case of our formulation).
+
+<table>
+<tbody>
+<tr>
+<td align="middle"><img src="iris_cluster.jpg?width=60%25" width="70%"></td>
+</tr>
+<tr>
+<td align="middle">
+<p>Clustering on UCI Iris data set</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+<table>
+<tbody>
+<tr>
+<td align="middle"><img src="wine_cluster.jpg?width=60%25" width="70%"></td>
+</tr>
+<tr>
+<td align="middle">
+<p>Clustering on UCI Wine data set</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+<table>
+<tbody>
+<tr>
+<td align="middle"><img src="vc_bt_cluster.jpg?width=60%25" width="70%"></td>
+</tr>
+<tr>
+<td align="middle">
+<p>Clustering on UCI Vertebral Column and Breast Tissue data sets</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+<h2>Reference in this page</h2>
+<p>[Frey07] Frey, B. J., and Dueck, D. 2007. Clustering by passing messages between data points. Science 315:972-977.</p>
+<p>[Ng01] Ng, A. Y.; Jordan, M. I.; and Weiss, Y. 2001. On spectral clustering: Analysis and an algorithm. In NIPS, 849-856.</p>
+</div>
+
+
+</div>

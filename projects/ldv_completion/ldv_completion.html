@@ -1,0 +1,78 @@
+<div style="background-color: white; margin: 25px 10%; font-family: arial; font-size: 12pt;">
+<center>
+<h1>Distortion Optimization based Image Completion from a Large Displacement View</h1>
+<br>
+<table>
+<tbody>
+<tr>
+<td align="middle"><img src="CGF_algorithm_overview.jpg?width=100%25" width="100%"></td>
+</tr>
+<tr>
+<td align="middle">The algorithm overview</td>
+</tr>
+</tbody>
+</table>
+</center>
+<h2>Abstract</h2>
+<p align="justify">We present a new image completion method based on an additional large displacement view (LDV) of the same scene for faithfully repairing large missing regions on the target image in an automatic way. A coarse-to-fine distortion correction algorithm is proposed to minimize the perspective distortion in the corresponding parts for the common scene regions on the LDV image. First, under the assumption of a planar scene, the LDV image is warped according to a homography to generate the initial correction result. Second, the residual distortions in the common known scene regions are revealed by means of a mismatch detection mechanism and relaxed by energy optimization of overlap correspondences, with the expectations of color constancy and displacement field smoothness. The fundamental matrix for the two views is then computed based on the reliable correspondence set. Third, under the constraints of epipolar geometry, displacement field smoothness and color consistency of the neighboring pixels, the missing pixels are orderly restored according to a specially defined repairing priority function. We finally eliminate the ghost effect between the repaired region and its surroundings by Poisson image blending. Experimental results demonstrate that our method outperforms recent state-of-the-art image completion methods for repairing large missing area with complex structure information. </p>
+<h2>Publication</h2>
+<p>Chunxiao Liu, Yingzhen Yang, Qunsheng Peng, Jin Wang, Wei Chen.<br>
+Distortion Optimization based Image Completion from a Large Displacement View<br>
+Computer Graphics Forum, 27(7): 1755-1764, 2008. </p>
+<p>Chunxiao Liu, Yingzhen Yang, Qunsheng Peng, Yanwen Guo.<br>
+A New Distortion Minimization Approach for Image Completion based on a Large Displacement View<br>
+Proc. of Computer Graphics International, 2008.<br>
+</p>
+<h2>Results</h2>
+<table>
+<tbody>
+<tr>
+<td align="middle"><img src="CGF_r1.jpg?width=100%25" width="100%"></td>
+</tr>
+<tr>
+<td>
+<p align="justify">Result 1: Human removal. (a) The target image; (b) The repairing result by texture synthesis based method [CPT04]; (c) Human removal with the occluded pixels in red; (d) The LDV image; (e) The warped LDV image; (f) Image stitching result [Sze04] with obvious mismatch on the ground; (g) Optimization result of overlap correspondences; (h) Our repairing result. </p>
+</td>
+</tr>
+<tr>
+<td><br>
+</td>
+</tr>
+<tr>
+<td align="middle"><img src="CGF_r2.jpg?width=100%25" width="100%"></td>
+</tr>
+<tr>
+<td>
+<p align="justify">Result 2:&nbsp;Object removal for the marble sculpture. (a) The target image; (b) The repairing result by texture synthesis based method [CPT04]; (c) Human removal with the occluded pixels in red; (d) The LDV image; (e) The warped LDV image; (f) Image stitching result [Sze04] with obvious mismatch on the ground; (g) Optimization result of overlap correspondences; (h) Our repairing result. </p>
+</td>
+</tr>
+<tr>
+<td><br>
+</td>
+</tr>
+<tr>
+<td align="middle"><img src="CGF_r3.jpg?width=100%25" width="100%"></td>
+</tr>
+<tr>
+<td>
+<p align="justify">Result 3:&nbsp;Object removal for the spherical statue. (a) The target image; (b) The repairing result by texture synthesis based method [CPT04]; (c) Human removal with the occluded pixels in red; (d) The LDV image; (e) The warped LDV image; (f) Image stitching result [Sze04] with obvious mismatch on the ground; (g) Optimization result of overlap correspondences; (h) Our repairing result. </p>
+</td>
+</tr>
+<tr>
+<td><br>
+</td>
+</tr>
+<tr>
+<td align="middle"><img src="CGF_r4.jpg?width=100%25" width="100%"></td>
+</tr>
+<tr>
+<td>
+<p align="justify">Result 4: Completion of the damaged region. (a) The target image; (b) The repairing result by texture synthesis based method [CPT04]; (c) Human removal with the occluded pixels in red; (d) The LDV image; (e) The warped LDV image; (f) Image stitching result [Sze04] with obvious mismatch on the ground; (g) Optimization result of overlap correspondences; (h) Our repairing result.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>References&nbsp;in this page</h2>
+<p>[CPT04] CRIMINISI A., P¨¦REZ P., TOYAMA K.: Region filling and object removal by exemplar-based image inpainting. IEEE Transactions on Image Processing 13, 9(Sep. 2004), 1200¨C1212. </p>
+<p>[Sze04] SZELISKI R.: Image Alignment and Stitching: A Tutorial. Tech. Rep. MSR-TR-2004-92, Microsoft Research, Microsoft Corporation, One Microsoft Way, Redmond, WA, Dec. 2004. </p>
+</div>
