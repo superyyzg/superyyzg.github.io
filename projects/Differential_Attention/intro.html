@@ -1,0 +1,65 @@
+<div style="background-color: white; margin: 25px 10%; font-family: arial; font-size: 12pt;">
+<center>
+<h1>Differentiable Attention</h1>
+</center>
+
+<br>
+<h2>Introduction</h2>
+<p align="justify">
+
+<h5>Self-Attention and Its Limitation</h5>
+
+Self-attention, with its success in Natural Language Processing (NLP), has recently drawn increasing interest beyond the NLP literature. 
+Efforts have been made to introduce self-attention to deep convolutional neural networks (CNNs) for computer vision tasks with compelling results. 
+The success of self-attention in computer vision is arguably attributed to its capability of capturing fine-grained cues and important parts of objects in images, 
+which is particularly helpful for downstream tasks such as image classification and object detection. 
+For example, non-local neural network [1] employs self-attention to aggregate input features to attention enhanced features by weighted summation of the input features. 
+The weights in the weighted summation are the pairwise feature affinity, which is computed as the dot product between input features. 
+Lacking an effective way of selecting channels, most existing works such as [1,2] use fixed channels to computer such feature affinity, and such fixed channels are selected by handcrafted pooling and sampling. 
+As a result, the selected channels may not be the most informative ones for the downstream tasks.
+
+<h5>The Proposed Differentiable Attention (DA)</h5>
+To solve the problem of self-attention, we propose a novel attention module termed Differentiable Attention (DA). In contrast with conventional self-attention, 
+DA automatically searches for the channels of image features to compute feature affinity by a novel differentiable searching method. 
+The differentiability of DA enables us to find the most informative channels by regular stochastic gradient descent in an end-to-end manner. 
+
+
+<h2>Preliminary Results of DA and Its Prospects</h2>
+As the name "attention" indicates, both self-attention and DA aim to focus attention on important areas/regions of the input image, such as tumor and abnormal lymph nodes, 
+so that features of these important areas receive enhanced weights for better performance on medical imaging tasks. To demonstrate the advantage of DA over the existing self-attention
+widely used in modern CNNs and transformer neural networks, we show the attention heatmaps of self-attention and DA for person Re-IDentification in the following figure. Based on the advantage of DA, 
+we propose to apply DA to medical imaging tasks. It is expected that DA receives enhanced attention weights on areas of interest, such as abnormalities, in medical images, so that it renders better in-domain
+image representation than self-attention.
+
+<br>
+<br>
+
+<table>
+<tbody>
+<tr>
+<td align="middle"><img src="attention_heatmap1-1.png?width=60%25" width="29%"></td>
+</tr>
+<tr>
+<tr>
+<td align="middle"><img src="attention_heatmap-2.png?width=60%25" width="29%"></td>
+</tr>
+<td align="middle">
+<p>Attention heatmaps of self-attention and DA. From left to right: the input image, the heatmap of self-attention, the heatmap of DA. It is preferred that attention heatmaps have high values on areas of 
+the input image corresponding to human body for person Re-IDentification. It can be observed that the heatmap of DA covers more areas of human body with high values than that of self-attention.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>Reference in this page</h2>
+<p>[1] X. Wang, R. Girshick, A. Gupta, and K. He, “Non-local neural
+networks,” in Proceedings of the IEEE conference on computer vision
+and pattern recognition, 2018, pp. 7794–7803. </p>
+<p>[2] Y. Li, X. Jin, J. Mei, X. Lian, L. Yang, C. Xie, Q. Yu, Y. Zhou,
+S. Bai, and A. L. Yuille, “Neural architecture search for lightweight
+non-local networks,” in Proceedings of the IEEE/CVF Conference on
+Computer Vision and Pattern Recognition, 2020, pp. 10297–10306.</p>
+
+</p>
+<br>
