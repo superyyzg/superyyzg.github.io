@@ -1,0 +1,31 @@
+<SCRIPT>
+    function isHidden(oDiv,pub_list = 0){
+      var vDiv = document.getElementById(oDiv);
+      vDiv.style.display = (vDiv.style.display == 'none')?'block':'none';
+      if (pub_list)
+      {
+        var full_pub_list_vDiv = document.getElementById('full_pub_list');
+		var selected_pub_list_vDiv = document.getElementById('recent_pub_list');
+				
+		if (full_pub_list_vDiv.style.display == 'block')
+		{
+		  selected_pub_list_vDiv.style.display = 'none';
+		} else
+		{
+		  selected_pub_list_vDiv.style.display = 'block';
+		}
+      }
+    }
+</SCRIPT>
+<table style="margin-left: 8%; margin-right: 8%; background: none repeat scroll 0% 0% rgb(255, 255, 255); font-style: normal; font-family: georgia, serif; font-size: 11pt;">
+<tbody>
+<tr>
+<td>
+	
+<strong><font size = "5">Yingzhen Yang</strong></font><br>
+<hr>
+
+
+<br><strong>About me</strong><br><br>
+I am an assistant professor at Arizona State University. My research covers
+	statistical machine learning, deep learning, optimization and theoretical computer science.
