@@ -26,56 +26,91 @@
 <body>
 <div class="container">
 
-    <h1>Introduction to Generalization-Aware Compression of Deep Neural Networks</h1>
+    <h1>Introduction to Generalization of Deep Neural Networks</h1>
 
     <h2>Overview</h2>
+    <p> In this brief introduction, we give a high-level description of the PI's research in the generalization of Deep Neural Networks (DNNs) and 
+	his existing work in model compression. It is emphasized that the proposed research is based on the PI's prior works with substantially novel methods, 
+	as detailed in the proposal.
+	
+	<h2>Introduction</h2>
     <p>
-        Deep neural networks (DNNs) have achieved remarkable success across a wide range of applications.
+        DNNs have achieved remarkable success across a wide range of applications.
         However, their large size and computational cost make deployment on resource-constrained devices
         challenging. Model compression techniques aim to reduce model size and computation while preserving performance.
+		Despite the lower deployment cost, such compressed models often suffer from
+        noticeable performance drops compared to the original models, such as drops in prediction accuracy,
+        potentially leading to catastrophic failures in important applications.
+		
+		Therefore, it is of particular importance to reduce the deployment cost of DNNs by model compression while improving the generalization
+        capability of compressed models for real-world applications, which is the purpose of the PI's work in model compression.
+				
     </p>
+	
+	<h2>PI's Prior Works in Generlization of DNNs and Model Compression</h2>
+    <p> The PI’s prior works cover extensive theoretical and empirical studies on 
+		the generalization of DNNs from two perspectives: an information-theoretic perspective and
+        a kernel learning perspective. These works include
+        sharp generalization bounds for regression with neural networks (ICML’25) [1] and transductive
+		learning (ICML’25) [2] by kernel complexity, Information Bottleneck (IB)-based token merging
+		(IEEE TPAMI’25) [3] and pruning (ICML’24) [4] for vision transformers, sample re-weighting for
+		generative data augmentation (UAI’25) [5], and kernel complexity-reduced training for improved
+		generalization of ViTs (NeurIPS’24) [6] and Graph Neural Networks (GNNs) for transductive learning (TMLR’25) [7].
+		
+		
+		The PI has extensive prior work in model compression using various techniques including channel pruning (IJCV/UAI/AAAI-MAKE) [8,9,10], 
+		weight sharing (ICLR/ICML) [11,12], and NAS [8,9,11], aiming to find DNNs with low deployment cost. 
+		These works in model compression ensure that the model compression part of the proposed project can be carried out smoothly with a solid methodological foundation.
+		
+		The PI's research features model compression while preserving the in-distribution generalization capability of compressed models. In particular, the IB-based token merging [3] 
+		and pruning [4] develop a distribution-free and computationally efficient variational upper bound for an IB ojective, so that the compressed models maintain 
+		in-distribution prediction accuracy. Furthermore, a principled kernel complexity loss is proposed and reduced for improved in-distribution generalization of popular ViTs [6] 
+		and GNNs [7].
+ 	</p>
+	
+	<h2>References</h2>
+	
+	<ul style="list-style-type: none; padding-left: 0;">
+	
+	<li> [1] Y. Yang, “Sharp generalization for nonparametric regression by over-parameterized neural
+	networks: A distribution-free analysis in spherical covariate,” in International Conference on
+	Machine Learning (ICML), 2025. </li>
+	
+	<li> [2] Y. Yang, “A new concentration inequality for sampling without replacement and its application
+	for transductive learning,” in International Conference on Machine Learning (ICML), 2025. </li>
+	
+	<li> [3] Y. Wang and Y. Yang, “Efficient visual transformer by learnable token merging,” 
+	IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 47(11): 9597-9608, 2025. </li>
+	
+	<li> [4] Y. Wang, P. Li, and Y. Yang, “Visual transformer with differentiable channel selection: an
+	information bottleneck inspired approach,” in International Conference on Machine Learning (ICML), 2024. </li>
+	
+	<li> [5] Y. Wang, R. Goel, M. Jojic, A. C. Silva, T. Wu, and Y. Yang, “Informative synthetic data
+	generation for thorax disease classification,” in Conference on Uncertainty in Artificial
+	Intelligence (UAI), 2025. </li>
+	
+	<li> [6] Y. Wang, R. Goel, U. Nath, A. C. Silva, T. Wu, and Y. Yang, “Learning low-rank feature 
+	for thorax disease classification,” in Advances in Neural Information Processing Systems (NeurIPS), 2024. </li>
+	
+	<li> [7] Y. Wang, C. Liu, and Y. Yang, “Diffusion on graph: Augmentation of graph structure for node classification,” Transactions on Machine Learning Research, 2025. </li>
+	
+	<li> [8] U. Nath, Y. Wang, P. Turaga, and Y. Yang, “Rnas-cl: Robust neural architecture search by cross-layer knowledge distillation,” 
+	International Journal of Computer Vision (IJCV), vol. 132, no. 12, pp. 5698–5717, 2024. </li>
 
-    <h2>What is Generalization-Aware Compression?</h2>
-    <p>
-        Generalization-aware compression focuses not only on reducing model complexity but also on maintaining
-        or improving the model’s ability to generalize to unseen data, including out-of-distribution (OOD) settings.
-        This is especially important in real-world applications where data distributions can shift.
-    </p>
+	<li> [9] U. Nath, Y. Wang, and Y. Yang, “Neural architecture search finds robust models by knowledge
+	distillation,” in Conference on Uncertainty in Artificial Intelligence (UAI), 2024. </li>
 
-    <h2>Key Ideas</h2>
-    <ul>
-        <li>Balance model efficiency and predictive performance</li>
-        <li>Preserve robust and transferable representations</li>
-        <li>Reduce reliance on domain-specific features</li>
-        <li>Enhance robustness to noise and distribution shifts</li>
-    </ul>
-
-    <h2>Related Research Directions</h2>
-    <p>
-        Inspired by research from the <strong>Statistical Deep Learning (SDL) Lab</strong>, this area connects
-        theoretical foundations with practical applications, including:
-    </p>
-    <ul>
-        <li>Transformer models</li>
-        <li>Graph learning</li>
-        <li>Neural architecture search</li>
-        <li>Model compression</li>
-        <li>Edge computing</li>
-    </ul>
-
-    <h2>Applications</h2>
-    <ul>
-        <li>Efficient deployment on edge devices</li>
-        <li>Real-time inference systems</li>
-        <li>Robust AI in noisy or changing environments</li>
-    </ul>
-
-    <h2>Conclusion</h2>
-    <p>
-        Generalization-aware compression is a promising direction that combines efficiency with robustness.
-        By integrating theoretical insights with practical design, it enables scalable and reliable deployment
-        of deep learning models in real-world settings.
-    </p>
+	<li> [10] U. Nath, S. Kushagra, and Y. Yang, “Adjoined networks: A training paradigm with applications to network compression,” in AAAI Spring Symposium on Machine Learning and
+	Knowledge Engineering for Hybrid Intelligence (AAAI-MAKE), 2022. </li>
+	
+	<li> [11] Y. Yang, J. Yu, N. Jojic, J. Huan, and T. S. Huang, “Fsnet: Compression of deep convolutional
+	neural networks by filter summary,” in International Conference on Learning Representations (ICLR), 2020. </li>
+	
+	<li> [12] X. Jin, Y. Yang, N. Xu, J. Yang, N. Jojic, J. Feng, and S. Yan, “Wsnet: Compact and
+	efficient networks through weight sampling,” in International Conference on Machine Learning
+	(ICML), 2018. </li>
+	
+	</ul>
 
     <footer>
         <p>Inspired by research themes from SDL Lab: 
